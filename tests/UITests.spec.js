@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 
-test.only('Browser context Playwright test', async ({page}) =>
+test('Browser context Playwright test', async ({page}) =>
 
 {
 const userName= page.locator('#username');
@@ -25,6 +25,5 @@ console.log(await CardTitles.first().textContent());
 const allTitles= await CardTitles.allTextContents();
 console.log(allTitles);
 
-}
+} );
 
-);
