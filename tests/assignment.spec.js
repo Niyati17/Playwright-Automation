@@ -1,5 +1,5 @@
 const {test, expect} = require('@playwright/test');
-test.only ('Get first product',async ({page}) => {
+test('Get first product',async ({page}) => {
 
     const CardTitles= page.locator('.card-body b');
 
