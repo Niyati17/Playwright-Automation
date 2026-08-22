@@ -1,7 +1,14 @@
 const {test, expect} = require('@playwright/test');
+
+
+
 test('Get first product',async ({page}) => {
 
+
     const CardTitles= page.locator('.card-body b');
+    
+
+    const product= page.locator('.card body n');
 
     await page.goto('https://rahulshettyacademy.com/client/#/auth/login')
     await page.locator('#userEmail').type('niyatikashyap33@gmail.com');

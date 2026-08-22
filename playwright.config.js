@@ -8,7 +8,7 @@ const config = {
   
     timeout: 30* 1000,
     expect: {
-    timeout: 10000
+    timeout: 12000
   },
       use: { browserName: 'chromium',
         headless: false
