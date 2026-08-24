@@ -11,8 +11,8 @@ test('Get first product',async ({page}) => {
     const product= page.locator('.card body n');
 
     await page.goto('https://rahulshettyacademy.com/client/#/auth/login')
-    await page.locator('#userEmail').type('niyatikashyap33@gmail.com');
-    await page.locator('#userPassword').type('Shivamybestie@17');
+    await page.locator('#userEmail').fill('niyatikashyap33@gmail.com');
+    await page.locator('#userPassword').fill('Shivamybestie@17');
     await page.locator('.btn.btn-block.login-btn').click();
 
     await page.waitForLoadState('networkidle');

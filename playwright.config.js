@@ -10,8 +10,14 @@ const config = {
     expect: {
     timeout: 12000
   },
-      use: { browserName: 'chromium',
-        headless: false
+
+  reporter: 'html',
+      use: { 
+        browserName: 'chromium',
+        headless: false,
+        // @ts-ignore
+        screenshot: 'only-on-failure',
+        trace: 'only on-failure',
        },
     };
 
